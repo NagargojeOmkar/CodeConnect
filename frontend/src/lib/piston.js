@@ -1,6 +1,11 @@
 // Local Backend Code Execution API
 
-const EXECUTE_API = "http://localhost:3000/api/execute";
+// const EXECUTE_API = "http://localhost:3000/api/execute";
+
+// for production
+
+const EXECUTE_API =
+`${import.meta.env.VITE_API_URL}/api/execute`;
 
 const LANGUAGE_VERSIONS = {
   javascript: { language: "javascript" },
